@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ashutosh Bajpai — Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Your Name</h1>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Hello — I build things</h2>
+      <p>Short tagline or description. Link to projects below.</p>
+      <p><a class="btn" href="#projects">See projects</a></p>
+    </section>
+
+    <section id="projects" class="cards">
+      <article class="card">
+        <h3>Project A</h3>
+        <p>Short description. <a href="#">Read more →</a></p>
+      </article>
+      <article class="card">
+        <h3>Project B</h3>
+        <p>Short description. <a href="#">Read more →</a></p>
+      </article>
+    </section>
+
+    <section id="contact" class="contact">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Your Name</div>
+  </footer>
+
+  <script>
+    // small nicety: set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
